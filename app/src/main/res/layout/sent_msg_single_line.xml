@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <github.ankushsachdeva.emojicon.EmojiconTextView
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.6"
+            android:gravity="left"
+            android:maxWidth="450dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            emojicon:emojiconSize="25sp" />
+        <ImageView
+                android:id="@+id/send_status_image"
+                android:layout_width="17dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom"
+                android:scaleType="fitXY"
+                android:src="@drawable/sending" />
+    </LinearLayout>
+
+</LinearLayout>

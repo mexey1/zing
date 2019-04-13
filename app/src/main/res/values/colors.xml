@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_green">#02C1C8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_blue">#278edd</color>
+    <color name="dark_blue">#2382ca</color>
+    <color name="light_gray">#e8e7e7</color>
+    <color name="chat_window_background">#e6e6d3</color>
+    <color name="chat_window_text_area_background">#cacaca</color>
+    <color name="baby_blue">#89CFF0</color>
+    <color name="sent_msg_bubble">#d5ed08</color>
+    <color name="battleship_grey">#848482</color>
+     <color name = "blue">#5B92E5</color>
+    <color name = "blue1">#00BFFF</color>
+    <color name = "grey">#555555</color>
+    <color name = "darkgrey">#808080</color>
+    <color name = "darkgrey1">#D3D3D3</color>
+    <color name="black">#000000</color>
+    <color name="call_green">#00ff00</color>
+     <color name="call_red">#ff0000</color>
+    
+    
+    
+</resources>

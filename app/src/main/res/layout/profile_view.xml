@@ -1,0 +1,167 @@
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/light_gray">
+  <LinearLayout 
+      android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical" 
+	  android:background="@color/light_gray">
+
+    <LinearLayout
+        android:id="@+id/pix_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/pix"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"/>
+
+        <github.ankushsachdeva.emojicon.EmojiconTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    
+    <LinearLayout
+        android:id="@+id/pix_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@color/white"
+	    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Status"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/divider_attach_horizontal"/>
+
+        <github.ankushsachdeva.emojicon.EmojiconTextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:text="Medium Text"
+            android:textColor="@color/grey"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/pix_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@color/white"
+	    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Contact"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/divider_attach_horizontal"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            
+            <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="18sp"
+            android:text="Contact on Zing"
+            android:textColor="@color/grey"
+            android:layout_gravity="left|center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <ImageView
+            android:id="@+id/call_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center"
+            android:src="@drawable/call_answer_2" />
+            
+            <View 
+	        android:layout_width="2dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginBottom="2dp"
+	        android:background="@drawable/divider_attach_vertical"/>
+
+            <ImageView
+                android:id="@+id/text_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/chat"
+                android:scaleType="fitXY" />
+            
+        </LinearLayout>
+         
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginTop="5dp"
+    android:minWidth="100dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".6" 
+        >
+
+        <github.ankushsachdeva.emojicon.EmojiconTextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:maxWidth="450dp"
+            emojicon:emojiconSize="25sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4" 
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp" 
+        android:layout_gravity="bottom|right"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <ImageView
+        android:id="@+id/send_status_image"
+        android:layout_width="17dp"
+        android:layout_height="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sending" 
+        />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

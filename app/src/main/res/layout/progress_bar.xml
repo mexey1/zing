@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/custom_progress_bg"
+    android:id="@+id/progress_bg">
+    
+    <View 
+       android:layout_height="match_parent"
+       android:layout_width="0dp"
+       android:id="@+id/progress_bar"
+       android:background="@drawable/custom_progress_loader"
+       />
+    
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/about_zing_background"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Zing Messenger"
+        android:id="@+id/zing_text"
+        android:layout_above="@+id/imageView"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="\u00a9 2014-2015 Zing Inc \n All rights reserved."
+        android:id="@+id/copyright"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Version 1.0"
+        android:id="@+id/version"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

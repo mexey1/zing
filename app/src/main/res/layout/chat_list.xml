@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/chatspager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.88" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        
+        android:background="@color/light_gray"
+        android:orientation="horizontal" >
+        
+        <RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/light_gray"
+	        android:orientation="vertical" 
+	        android:id="@+id/profile_click"
+	        
+	        android:layout_weight=".25">
+
+	        <ImageView
+	            android:id="@+id/profile_view"
+	            android:layout_width="36dp"
+	            android:layout_height="36dp"
+	            android:layout_gravity="center"
+	            android:src="@drawable/status"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerInParent="true"
+	            />
+	        
+	        <TextView
+	            android:id="@+id/profile_text"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:text="Profile"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            android:layout_weight=".3"
+	             android:visibility="gone"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+		</RelativeLayout>
+		
+		<RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/light_gray"
+	        android:orientation="vertical" 
+	        android:layout_weight=".25"
+	        android:id="@+id/zingers_click">
+		
+	        <ImageView
+	            android:id="@+id/zingers_view"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center"
+	            android:src="@drawable/online"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerInParent="true"
+	           />
+	        
+	        <TextView
+		            android:id="@+id/textView3"
+		            android:layout_width="match_parent"
+		            android:gravity="center"
+		            android:layout_height="0dp"
+		            android:text="Zingers"
+		            android:layout_gravity="center"
+		            android:layout_weight=".3"
+		             android:visibility="gone"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    </RelativeLayout>
+
+		<RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/light_gray"
+	        android:orientation="vertical" 
+	        android:layout_weight=".25"
+	        android:id="@+id/chats_click">
+
+			<ImageView
+			    android:id="@+id/chats_view"
+			    android:layout_width="25dp"
+			    android:layout_height="25dp"
+			    android:layout_marginRight="5dp"
+			    android:layout_weight=".7"
+			    android:layout_gravity="center"
+			    android:src="@drawable/chatbox"
+			    android:layout_centerInParent="true" />
+
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:text="Chats"
+	            android:gravity="center"
+	            android:layout_gravity="center"
+	            android:layout_weight=".3"
+	             android:visibility="gone"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    </RelativeLayout>
+
+		<RelativeLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/light_gray"
+	        android:orientation="vertical" 
+	        android:layout_weight=".25"
+	        android:id="@+id/settings_click">
+	        
+	        <ImageView
+	            android:id="@+id/settings_view"
+	            android:layout_width="25dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center"
+	            android:src="@drawable/settings"
+	            android:layout_marginRight="5dp"
+	            android:layout_centerInParent="true"
+	           />
+	        
+	        <TextView
+		            android:id="@+id/textView4"
+		            android:layout_width="match_parent"
+		            android:layout_height="0dp"
+		            android:text="Settings"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:layout_weight=".3"
+		            android:visibility="gone"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+		</RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

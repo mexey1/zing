@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/aboutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_border"
+        android:gravity="left" 
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/aboutImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="left"
+            android:src="@drawable/about" />
+
+        <TextView
+            android:id="@+id/aboutTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:text="About"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+         <ImageView 
+           	    android:layout_width="0dp"
+           	    android:layout_height="30dp"
+           	    android:layout_weight=".2"
+           	    android:layout_gravity="center"
+           	    android:src="@drawable/right"
+           />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/soundsLayout"
+       
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_border"
+        android:gravity="left" 
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/soundsImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/alerts" />
+
+        <TextView
+            android:id="@+id/soundsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:text="In-app sounds"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:text="ToggleButton" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/down_contacts"
+       
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_border"
+        android:gravity="left" 
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/auto_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:id="@+id/auto_download_text"
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:text="Auto-Download Files"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:text="ToggleButton" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/status"
+       
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_border"
+        android:gravity="left" 
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/ic_menu_status" />
+
+        <TextView
+            android:id="@+id/textView1"
+           android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView 
+           	    android:layout_width="0dp"
+           	    android:layout_height="30dp"
+           	    android:layout_weight=".2"
+           	    android:layout_gravity="center"
+           	    android:src="@drawable/right"
+           />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/wifi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_border"
+        android:gravity="left" 
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/log_out"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="left"
+            android:src="@drawable/wifi" />
+
+        <TextView
+            android:id="@+id/logoutTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:text="Wifi Networks"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+         <ImageView 
+           	    android:layout_width="0dp"
+           	    android:layout_height="30dp"
+           	    android:layout_weight=".2"
+           	    android:layout_gravity="center"
+           	    android:src="@drawable/right"
+           />
+    </LinearLayout>
+    
+    
+</LinearLayout>

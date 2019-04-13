@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/abs__menu_dropdown_panel_holo_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+	<RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="10dp"
+        android:id="@+id/gallery">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+             android:layout_marginBottom="15dp"
+            android:src="@drawable/attach_gallery" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:textColor="@color/white"
+            android:text="Picture"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+    </RelativeLayout>
+    <View 
+        android:background="@drawable/divider_attach_vertical"
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        />
+    
+	<RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="10dp"
+        android:id="@+id/audio">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+             android:layout_marginBottom="15dp"
+            android:src="@drawable/attach_audio" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:textColor="@color/white"
+            android:text="Audio"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+    </RelativeLayout>
+
+    </LinearLayout>
+
+     <View 
+        android:background="@drawable/divider_attach_horizontal"
+        android:layout_height="1dp"
+        android:layout_width="200dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/video"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/attach_video"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:textColor="@color/white"
+            android:text="Video"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+    </RelativeLayout>
+	 <View 
+        android:background="@drawable/divider_attach_vertical"
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        />
+     <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/file"
+        android:paddingTop="10dp" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+             android:layout_marginBottom="15dp"
+            android:src="@drawable/attach_file" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:textColor="@color/white"
+            android:text="File"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+    </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

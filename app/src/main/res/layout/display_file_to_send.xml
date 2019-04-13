@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+     >
+
+    
+    <LinearLayout
+        android:id="@+id/top_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_height="100dp"
+        android:src="@drawable/file" />
+
+    <EditText
+        android:id="@+id/commentBox"
+        android:layout_width="0dp"
+        android:layout_weight=".7"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:background="@drawable/fields"
+        android:ems="10"
+        android:hint="enter comments here"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+    
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/send_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Send" 
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/blue_button"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Cancel" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/blue_button"/>
+    </LinearLayout>
+
+</RelativeLayout>
